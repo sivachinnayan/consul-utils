@@ -4,9 +4,8 @@
 
 
 
-# wget consul init.d script 
-
-#Chkconfig command tool allows to configure services start and stop automatically in the /etc/rd.d/init.d scripts through command line
+* wget consul init.d script 
+* Chkconfig command tool allows to configure services start and stop automatically in the /etc/rd.d/init.d scripts through command line
 ``` bash
 $cd /etc/init.d/
 $ wget https://raw.githubusercontent.com/sivachinnayan/consul-utils/master/consul
