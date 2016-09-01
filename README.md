@@ -6,7 +6,10 @@
 
 * wget consul init.d script 
 * Chkconfig command tool allows to configure services start and stop automatically in the /etc/rd.d/init.d scripts through command line
+
 ``` bash
+$mkdir /etc/consul.d
+$echo '{"service": {"name": "helloworld", "tags": ["helloworld"], "port": 1024,"check": {"script": "curl localhost:1024 >/dev/null 2>&1", "interval": "10s"}}}' > /etc/consul.d/helloworld.json
 $cd /etc/init.d/
 $ wget https://raw.githubusercontent.com/sivachinnayan/consul-utils/master/consul
 $chmod 755 consul
